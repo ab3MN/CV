@@ -29,9 +29,9 @@ navMenu.onclick = () => navMenu.classList.remove('show-menu');
 
 // const onDownload = () => {
 //   root.classList.add('pdf');
-//   setTimeout(() => root.classList.remove('pdf'));
 
 //   html2pdf(cv, opt);
+//   return setTimeout(() => root.classList.remo('pdf'), 2000);
 // };
 
 // document
