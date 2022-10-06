@@ -19,21 +19,21 @@ navToggle.onclick = () => navMenu.classList.toggle('show-menu');
 
 navMenu.onclick = () => navMenu.classList.remove('show-menu');
 
-// const opt = {
-//   margin: 1,
-//   filename: 'Front-End(Mykhailo-Nikolaiev).pdf',
-//   image: { type: 'jpeg', quality: 0.98 },
-//   html2canvas: { scale: 4 },
-//   jsPDF: { format: 'a4', orientation: 'portrait' },
-// };
+const opt = {
+  margin: 1,
+  filename: 'Front-End(Mykhailo-Nikolaiev).pdf',
+  image: { type: 'jpeg', quality: 0.98 },
+  html2canvas: { scale: 4 },
+  jsPDF: { format: 'a4', orientation: 'portrait' },
+};
 
-// const onDownload = () => {
-//   root.classList.add('pdf');
+const onDownload = () => {
+  root.classList.add('pdf');
 
-//   html2pdf(cv, opt);
-//   return setTimeout(() => root.classList.remo('pdf'), 2000);
-// };
+  html2pdf(cv, opt);
+  () => root.classList.remo('pdf');
+};
 
-// document
-//   .querySelectorAll('.download')
-//   .forEach((el) => (el.onclick = onDownload));
+document
+  .querySelectorAll('.download')
+  .forEach((el) => (el.onclick = onDownload));
