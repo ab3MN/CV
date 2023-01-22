@@ -1,4 +1,5 @@
 'use strict';
+
 const isDark = localStorage.getItem('isDarkTheme');
 const onDarkTheme = () => (
   themeButton.classList.add('bx-sun'), root.classList.add('dark-theme')
@@ -18,22 +19,3 @@ themeButton.onclick = () =>
 navToggle.onclick = () => navMenu.classList.toggle('show-menu');
 
 navMenu.onclick = () => navMenu.classList.remove('show-menu');
-
-const opt = {
-  margin: 1,
-  filename: 'Front-End(Mykhailo-Nikolaiev).pdf',
-  image: { type: 'jpeg', quality: 0.98 },
-  html2canvas: { scale: 4 },
-  jsPDF: { format: 'a4', orientation: 'portrait' },
-};
-
-const onDownload = () => {
-  root.classList.add('pdf');
-
-  html2pdf(cv, opt);
-  () => root.classList.remo('pdf');
-};
-
-document
-  .querySelectorAll('.download')
-  .forEach((el) => (el.onclick = onDownload));

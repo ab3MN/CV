@@ -48,6 +48,10 @@
     grid-template-columns: repeat(3, max-content);
     column-gap: 3.5rem;
   }
+
+  .interests__container {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 320px) {

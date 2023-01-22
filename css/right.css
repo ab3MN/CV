@@ -57,7 +57,7 @@
 
 .interests__container {
   grid-template-columns: repeat(3, 1fr);
-  margin-top: var(--mb-2);
+  margin: var(--mb-2) 0;
 }
 
 .interests__icon {
@@ -85,6 +85,7 @@
   border-radius: 0.4rem;
   z-index: 777;
   transition: 0.4s;
+  color: var(--title-color);
 }
 
 .scrolltop__icon {
@@ -95,4 +96,8 @@
 .show__scroll {
   visibility: visible;
   bottom: 5rem;
+}
+
+.scrolltop.dark-theme {
+  color: var(--container-color);
 }
