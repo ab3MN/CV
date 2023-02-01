@@ -35,9 +35,9 @@
 }
 
 .home__img {
-  width: 120px;
-  height: 150px;
-  border-radius: 50%;
+  width: 200px;
+  height: 100%;
+  border-radius: 5%;
   justify-self: center;
   margin-bottom: var(--mb-1);
 }
